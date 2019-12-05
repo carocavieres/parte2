@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <app-encabezado [PageTitle]="tituloPagina" ></app-encabezado>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="usuario.avatar" />
+    <ion-card-header>
+      <ion-card-subtitle>{{ usuario.email }}</ion-card-subtitle>
+      <ion-card-title>{{ usuario.last_name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Este usuario tiene la id: {{usuario.id}} y correo {{usuario.emal}}. Su nombre es {{usuario.first_name}} y su apellido {{usuario.last_name}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
